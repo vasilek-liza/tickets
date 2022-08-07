@@ -1,0 +1,33 @@
+.tickets {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    @media screen and (max-width: 1023px) {
+        width: 71%;
+    }
+    @media screen and (max-width: 767px) {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+.icon {
+    &-plane {
+        display: flex;
+        background: url(../../assets/icons/plane.svg);
+        height: 20px;
+        width: 20px;
+        transform: rotate(90deg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        @media screen and (max-width: 1023px) {
+            height: 15px;
+            width: 15px;
+        }
+    }
+    &-line {
+        max-width: 90px;
+        background-color: #cdd4de;
+        height: 1px;
+        width: 100%;
+    }
+}

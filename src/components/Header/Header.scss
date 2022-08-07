@@ -1,0 +1,20 @@
+.icon-header {
+    display: flex;
+    background: url(../../assets/icons/header.svg);
+    transform: rotate(350deg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+    border-radius: 50%;
+    @media screen and (max-width: 1023px) {
+        width: 80px;
+        height: 80px;
+    }
+}
+.header {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}

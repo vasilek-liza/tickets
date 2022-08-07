@@ -1,0 +1,38 @@
+.filter {
+    &-currency__value {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        padding: 0 20px;
+        @media screen and (max-width: 1023px) {
+            padding: 0 10px;
+            margin-bottom: 10px;
+        }
+        &-item {
+            color: #0c73fe;
+            border: 1px solid rgba(13,25,43,.16);
+            padding: 10px;
+            width: 100%;
+            text-align: center;
+            cursor: pointer;
+            &:first-child {
+                border-radius: 10px 0 0 10px;
+            }
+            &:nth-child(2){
+                border-right: none;
+                border-left: none;
+            }
+            &:last-child {
+                border-radius: 0 10px 10px 0;
+            }
+            &.active, &.active:hover {
+                background: #0c73fe;
+                color: #fff;
+            }
+            &:hover {
+                border: 1px solid #0c73fe;
+                background: #e5f4ff;
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.stops {
+    &__content-route {
+        display: flex;
+        flex-direction: column;
+        padding: 0 15 0 10px;
+        @media screen and (max-width: 1023px) {
+            padding: 0 10px;
+        }
+        @media screen and (max-width: 767px) {
+            padding: 0;
+        }
+        @media screen and (max-width: 480px) {
+            display: none;
+        }
+        &__text {
+            color: #9ea9b7;
+            text-transform: uppercase;
+            font-size: 16px;
+            @media screen and (max-width: 1023px) {
+                font-size: 14px;
+            }
+            @media screen and (max-width: 767px) {
+                font-size: 12px;
+            }
+        }
+        &__stop {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+    }
+
+}
